@@ -1,0 +1,67 @@
+﻿<Window x:Class="MachineStatusTracker.AddMachine"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MachineStatusTracker"
+        mc:Ignorable="d"
+        Title="AddMachine" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="3*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <TextBlock  Grid.Row="1"
+            Grid.Column="1"
+            Text="Name:" FontSize="20"/>
+        <TextBox x:Name="TextBoxName"  Grid.Row="1"
+            Grid.Column="2"
+            FontSize="20" MaxLength="30"/>
+        <TextBlock  Grid.Row="2"
+            Grid.Column="1"
+            Text="Model:" FontSize="20"/>
+        <TextBox x:Name="TextBoxModel" Grid.Row="2"
+            Grid.Column="2"
+            FontSize="20"/>
+        <TextBlock  Grid.Row="3"
+            Grid.Column="1"
+            Text="Category:" FontSize="20"/>
+        <TextBox x:Name="TextBoxCategory"  Grid.Row="3"
+            Grid.Column="2"
+            FontSize="20"/>
+        <TextBlock  Grid.Row="4"
+            Grid.Column="1"
+            Text="Manufacturer:" FontSize="20"/>
+        <TextBox x:Name="TextBoxManufacturer" Grid.Row="4"
+            Grid.Column="2"
+            FontSize="20"/>
+        <TextBlock  Grid.Row="5"
+            Grid.Column="1"
+            Text="Status:" FontSize="20"/>
+        <ComboBox x:Name="comboBoxStatus" Grid.Row="5"
+            Grid.Column="2"
+            FontSize="20"     />
+        <TextBlock  Grid.Row="6"
+            Grid.Column="1"
+            Text="Description:" FontSize="20"/>
+        <TextBox x:Name="TextBoxDescription" Grid.Row="6"
+            Grid.Column="2"
+            FontSize="20"/>
+        <Button Content="Save" Grid.Row="7"
+            Grid.Column="3"
+            FontSize="20"
+            Click="Button_Click_Save"/>
+    </Grid>
+</Window>
